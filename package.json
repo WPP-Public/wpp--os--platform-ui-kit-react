@@ -38,7 +38,7 @@
   },
 
   "publishConfig": {
-    "registry": "https://wppopen.jfrog.io/artifactory/api/npm/wpp-open-libs-npm-local/"
+    "registry": "https://github.com/WPP-Public/wpp--os--platform-ui-kit-react"
   },
-  "repository": "https://gitlab.com/2sixty/chaos/osmium/public/tools/platform-ui-kit"
+  "repository": "https://github.com/WPP-Public/wpp--os--platform-ui-kit-react"
 }
