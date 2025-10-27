@@ -1,5 +1,5 @@
 {
-  "name": "@wpp-public/components-library-react",
+  "name": "@wppopen/components-library-react",
   "description": "React bindings for components-library",
   "version": "3.3.0",
 
@@ -9,7 +9,7 @@
     "build": "tsc --project tsconfig.lib.json",
     "build-watch": "tsc-watch --project tsconfig.lib.json --preserveWatchOutput --onSuccess \"npm run yalc-push\"",
 
-    "prebuild": "npm run build --workspace @wpp-public/components-library",
+    "prebuild": "npm run build --workspace @wppopen/components-library",
 
     "yalc-push": "dotenv-extended --path=../../.env validEnv RUN_YALC && yalc push"
   },
@@ -21,7 +21,7 @@
   "main": "lib/index.js",
 
   "peerDependencies": {
-    "@wpp-public/components-library": "3.3.0",
+    "@wppopen/components-library": "3.3.0",
 
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^17.0.0 || ^18.0.0"
@@ -38,7 +38,7 @@
   },
 
   "publishConfig": {
-    "registry": "https://github.com/WPP-Public/wpp--os--platform-ui-kit-react"
+    "registry": "https://wppopen.jfrog.io/artifactory/api/npm/wpp-open-libs-npm-local/"
   },
-  "repository": "https://github.com/WPP-Public/wpp--os--platform-ui-kit-react"
+  "repository": "https://gitlab.com/2sixty/chaos/osmium/public/tools/platform-ui-kit"
 }
