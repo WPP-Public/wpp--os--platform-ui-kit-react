@@ -8,5 +8,5 @@ export declare const isCoveredByReact: (eventNameSuffix: string) => boolean;
 export declare const syncEvent: (node: Element & {
     __events?: {
         [key: string]: ((e: Event) => any) | undefined;
-    };
-}, eventName: string, newEventHandler?: (e: Event) => any) => void;
+    } | undefined;
+}, eventName: string, newEventHandler?: ((e: Event) => any) | undefined) => void;

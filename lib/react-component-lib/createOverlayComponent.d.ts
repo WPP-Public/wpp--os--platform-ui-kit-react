@@ -16,6 +16,6 @@ export interface ReactOverlayProps {
 export declare const createOverlayComponent: <OverlayComponent extends object, OverlayType extends OverlayElement>(tagName: string, controller: {
     create: (options: any) => Promise<OverlayType>;
 }, customElement?: any) => React.ForwardRefExoticComponent<React.PropsWithoutRef<OverlayComponent & ReactOverlayProps & {
-    forwardedRef?: StencilReactForwardedRef<OverlayType>;
+    forwardedRef?: StencilReactForwardedRef<OverlayType> | undefined;
 }> & React.RefAttributes<OverlayType>>;
 export {};
